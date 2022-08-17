@@ -1,0 +1,102 @@
+@import url("//db.onlinewebfonts.com/c/eab8ba82f23d8de63cdcc380c89eb875?family=CyberpunkWaifus");
+
+@font-face {
+  font-family: "CyberpunkWaifus";
+  src: url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.eot");
+  src: url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/eab8ba82f23d8de63cdcc380c89eb875.svg#CyberpunkWaifus")
+      format("svg");
+}
+
+body {
+  background-color: #2d3844;
+  color: white;
+  overflow-x: hidden;
+}
+.App {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: CyberpunkWaifus;
+  text-align: center;
+}
+
+h2 {
+  font-family: CyberpunkWaifus;
+}
+
+h3 {
+  font-family: CyberpunkWaifus;
+}
+h4 {
+  font-family: CyberpunkWaifus;
+}
+
+p {
+  font-family: CyberpunkWaifus;
+  text-align: justify;
+}
+
+.TeamPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Team {
+  width: full;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-one {
+  padding: 20px;
+  margin: 20px;
+  
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-one img {
+  width: 200px;
+}
+
+/* PLAYER SELECT */
+
+.playerSelect {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.playerSelectContent {
+  margin: 30px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.playerSelectContent form {
+  margin: 30px;
+}
+
+.playerSelectContent input {
+  display: flex;
+  margin: 20px 0px 30px 80px;
+}
+
+.playerSelectContent h3 {
+  text-align: center;
+}

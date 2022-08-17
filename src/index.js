@@ -2,7 +2,7 @@ const express = require("express");
 const cheerio = require('cheerio');
 const axios = require('axios');
 
-const team = require (__dirname + "/TeamLinks.js").teamLinks;
+/*const team = require (__dirname + "/TeamLinks.js").teamLinks;*/
 const PORT = 6000;
 
 
@@ -17,13 +17,13 @@ axios(URL)
 
         const getTeamInfo = () => {
             const players = [];
-            const TeamURL = [];
+            
 
             $('.col-custom', html).each(function () {
                 const PlayerName = $(this).find("span").text()
                 const PlayerImage = $(this).find('img').attr('src');
                 players.push({
-                    "TeamName": "Spirit",
+                    "TeamName": "faze",
                     PlayerName,
                     PlayerImage,
                 })
@@ -48,6 +48,5 @@ axios(URL)
     }).catch(err => console.log(err))
 
 
-    console.log(team)
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
